@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>MediTech</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="webmanves" />
+        <link rel="shortcut icon" href="" />
+
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+        <!-- Bootstrap Css-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+        <!-- Material design Css -->
+        <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+
+        <!-- Custom Css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href="../MediTech/css/main.css" rel="stylesheet" />
+        <script src="../MediTech/js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var calendarEl = document.getElementById("calendar");
+
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    headerToolbar: {
+                        left: "prev,next today",
+                        center: "title",
+                        right: "dayGridMonth,timeGridWeek,timeGridDay",
+                    },
+                    initialDate: "2020-09-12",
+                    navLinks: true, // can click day/week names to navigate views
+                    selectable: true,
+                    selectMirror: true,
+                    select: function (arg) {
+                        var title = prompt("Booking Appointment:");
+                        if (title) {
+                            calendar.addEvent({
+                                title: title,
+                                start: arg.start,
+                                end: arg.end,
+                                allDay: arg.allDay,
+                            });
+                        }
+                        calendar.unselect();
+                    },
+                    eventClick: function (arg) {
+                        if (confirm("Are you sure you want to delete this Appointment?")) {
+                            arg.event.remove();
+                        }
+                    },
+                    editable: true,
+                    dayMaxEvents: true, // allow "more" link when too many events
+                    events: [
+                        {
+                            title: "Dr.Jha-Available",
+                            start: "2020-09-01",
+                        },
+                        {
+                            title: "Dr.Maria-Availabl",
+                            start: "2020-09-07",
+                            end: "2020-09-10",
+                        },
+                        {
+                            groupId: 999,
+                            title: "All Dr Available",
+                            start: "2020-09-09T16:00:00",
+                        },
+                        {
+                            groupId: 999,
+                            title: "No Booking",
+                            start: "2020-09-16",
+                        },
+                        {
+                            title: "Dr.Smith-Available",
+                            start: "2020-09-11",
+                            end: "2020-09-13",
+                        },
+                        {
+                            title: "Meeting",
+                            start: "2020-09-12T10:30:00",
+                            end: "2020-09-12T12:30:00",
+                        },
+                        {
+                            title: "Lunch",
+                            start: "2020-09-12T12:00:00",
+                        },
+                        {
+                            title: "Meeting",
+                            start: "2020-09-12T14:30:00",
+                        },
+                        {
+                            title: "Happy Hour",
+                            start: "2020-09-12T17:30:00",
+                        },
+                        {
+                            title: "Dinner",
+                            start: "2020-09-12T20:00:00",
+                        },
+                        {
+                            title: "Dr.Jeny-Available",
+                            start: "2020-09-13",
+                        },
+                        {
+                            title: "Click for Google",
+                            url: "http://google.com/",
+                            start: "2020-09-28",
+                        },
+                    ],
+                });
+
+                calendar.render();
+            });
+        </script>
+        <style>
+            body {
+                /* margin: 40px 10px; */
+                padding: 0;
+                font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+
+            #calendar {
+                max-width: 1100px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- navbar-start -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light nav-sticky">
+            <div class="container">
+                <a class="navbar-brand font-size-24" href="index.html">MediTech</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="appointment.html">appointment</a>
+                        </li>
+                    </ul>
+                    <div class="button button_1 navbar_button"><a href="appointment-login.html">Make an Appointment</a></div>
+                    <div class="button button-2 button_2 navbar_button"><a href="login.html">LogIn</a></div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar-end -->
+        <div class="login-section">
+            <div class="container">
+                <div id="calendar"></div>
+            </div>
+        </div>
+
+        <!-- footer-start -->
+        <section class="footer-section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <a href=""><h4 class="font-weight-bold mb-4">MediTech</h4></a>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum lacinia turpis, ut facilisis sapien lacinia eget. Cras interdum ligula elit, maximus molestie ex placerat non.</p>
+                        <ul class="list-unstyled">
+                            <a href="">
+                                <li class="list-inline-item pr-4"><i class="mdi mdi-facebook footer-icon font-size-20"></i></li>
+                            </a>
+                            <a href="">
+                                <li class="list-inline-item pr-4"><i class="mdi mdi-linkedin footer-icon font-size-20"></i></li>
+                            </a>
+                            <a href="">
+                                <li class="list-inline-item"><i class="mdi mdi-instagram footer-icon font-size-20"></i></li>
+                            </a>
+                        </ul>
+                    </div>
+                    <!-- col-end -->
+                    <div class="col-lg-4 col-md-6">
+                        <a href=""><h4 class="font-weight-bold mb-4 heading-space">Contact Us</h4></a>
+                        <div class="media">
+                            <i class="mdi mdi-map-marker footer-icon font-size-20 pr-2"></i>
+                            <div class="media-body">
+                                <p>1481 Creekside Lane Avila Beach, CA 931</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <i class="mdi mdi-phone footer-icon font-size-20 pr-2"></i>
+                            <div class="media-body">
+                                <p class=""><a href="#" class="footer-text">+1 666 666 6666</a></p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <i class="mdi mdi-email footer-icon font-size-20 pr-2"></i>
+                            <div class="media-body">
+                                <p class="footer-text"><a href="#" class="footer-text">meditech@loremipsum.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col-end -->
+                    <div class="col-lg-4 col-md-10">
+                        <a href=""><h4 class="font-weight-bold mb-4 heading-space">Quick Contact</h4></a>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control border font-size-12" id="inputEmail4" placeholder="EMAIL" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="password" class="form-control border font-size-12" id="inputPassword4" placeholder="PASSWORD" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control border font-size-12" id="exampleFormControlTextarea1" placeholder="MESSAGE" rows="3"></textarea>
+                            </div>
+                        </form>
+                        <a href="" class="hero-btn mt-3">Submit</a>
+                    </div>
+                    <!-- col-end -->
+                </div>
+                <!-- row-end -->
+            </div>
+        </section>
+        <!-- footer-end -->
+        <div class="card-footer text-muted text-center">
+            2020 © Design By Webmavens
+        </div>
+        <!-- footer-end -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/calender.js"></script>
+    </body>
+</html>

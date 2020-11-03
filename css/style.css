@@ -1,0 +1,940 @@
+/*
+* Template Name : Medical Landing Template
+* Version : 1.0.0
+* Created by : webmavens
+* File: Main Css 
+*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #9a9a9a;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+/* FONT-SIZE */
+.font-size-10 {
+    font-size: 10px !important;
+}
+.font-size-12 {
+    font-size: 12px !important;
+}
+.font-size-13 {
+    font-size: 13px !important;
+}
+.font-size-14 {
+    font-size: 14px !important;
+}
+.font-size-15 {
+    font-size: 15px !important;
+}
+.font-size-16 {
+    font-size: 16px !important;
+}
+.font-size-17 {
+    font-size: 17px !important;
+}
+.font-size-18 {
+    font-size: 18px !important;
+}
+.font-size-19 {
+    font-size: 19px !important;
+}
+.font-size-20 {
+    font-size: 20px !important;
+}
+.font-size-21 {
+    font-size: 21px !important;
+}
+.font-size-22 {
+    font-size: 22px !important;
+}
+.font-size-23 {
+    font-size: 23px !important;
+}
+.font-size-24 {
+    font-size: 24px !important;
+}
+.font-size-26 {
+    font-size: 26px !important;
+}
+.font-size-28 {
+    font-size: 28px !important;
+}
+
+/* FONT-WEIGHT */
+
+.font-weight-light-300 {
+    font-weight: 300;
+}
+.font-weight-regular {
+    font-weight: 400;
+}
+.font-weight-medium {
+    font-weight: 500;
+}
+.font-weight-bold {
+    font-weight: 600;
+}
+
+/* NAVBAR */
+.navbar {
+    padding: 16px 10px;
+    box-shadow: 0 4px 6px 0 rgba(12,0,46,.05);
+}
+.navbar-nav {
+    margin: 0;
+}
+.navbar .navbar-nav .nav-link {
+    margin-left: 16px;
+    text-decoration: none;
+    display: inline-block;
+    color: #191919;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    outline: none;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: #76DADC;
+}
+.navbar_button {
+    margin-right: 16px;
+}
+.button {
+    height: 46px;
+    margin-left: 30px;
+    margin-right: 0px !important;
+}
+.button_1 {
+    background: #fd556d;
+    border: solid 2px transparent;
+}
+.button_1 a {
+    color: #FFFFFF;
+}
+.button a {
+    display: block;
+    padding-left: 40px;
+    padding-right: 36px;
+    line-height: 42px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.button_1:hover {
+    background: transparent;
+    border: solid 2px #fd556d;
+}
+.button-2 {
+    margin-left: 8px;
+}
+.button_2 {
+    background: transparent;
+    border: solid 2px #fd556d;
+}
+.button_2 a {
+    color: #fd556d;
+}
+.button_2:hover{
+    background: #fd556d;
+    border: solid 2px transparent;
+}
+.button_2:hover a {
+    color: #fff;
+}
+.button_1:hover a {
+    color: #fd556d;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-brand:focus {
+    outline: none;
+}
+/* HERO */
+.hero-section {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-color: #b0b0b0;
+    background-image: url(../images/img-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.small-text {
+    color: #252525;
+    font-size: 16px !important;
+    font-weight: 400;
+}
+.hero-heading {
+    color: #232323;
+    font-size: 40px !important;
+    font-weight: 700;
+}
+.hero-btn {
+    color: #fff !important;
+    background-color: #76DADC  ;
+    border: 2px solid #76DADC;
+    border-color: #76DADC ;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 12px 30px !important;
+    transition: all 0.2s ease-in-out;
+}
+.hero-btn:hover {
+    color: #76DADC !important;
+    background: #fff;
+    text-decoration: none;
+}
+.btn-center {
+    color: #76DADC;
+    background-color: #fff  ;
+    border: 2px solid #76DADC;
+    border-color: #76DADC ;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 12px 30px !important;
+    transition: all 0.2s ease-in-out;
+}
+.btn-center:hover {
+    text-decoration: none;
+    background-color: #76DADc;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/* ABOUT BOX */
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about-section {
+    margin-top: -215px;
+}
+.heading-space {
+    letter-spacing: 1px;
+}
+.about-box-icon,
+.service-icon {
+    color: #000;
+}
+.about-text {
+    color: #3e454c !important;
+}
+.about-box-left {
+    padding-top: 70px;
+    padding-right: 40px;
+    padding-bottom: 70px;
+    padding-left: 40px;
+    background-color: #76dadc57;
+}
+.about-box-center {
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    background-color: #76dadcc2;
+}
+.about-box-right {
+    padding-top: 70px;
+    padding-right: 40px;
+    padding-bottom: 94px;
+    padding-left: 40px;
+    background-color: #76dadc57;
+}
+.about-contain {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-box-heading {
+    color: #232323;
+}
+.margin-top-35 {
+    margin-top: 35px;
+}
+.about-heading,
+.service-heading,
+.testi-heading,
+.contact-title {
+    color: #232323;
+}
+.about-box-icon i {
+    font-size: 28px;
+}
+/* SERVICE */
+.service-section {
+    background: linear-gradient(to bottom,#76DADC,#D5F9F9);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.service-sub-heading {
+    color: #252525;
+    font-size: 14px !important;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.service-main-box {
+    padding-top: 80px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+/* Appointment */
+.form-control {
+    border: none;
+    border-bottom: 1px solid #e2e2e2;
+    height: calc(1.5em + .75rem + 30px);
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #e2e2e2;
+}
+.text-color {
+    color: #fff;
+}
+.testi-box {
+    position: relative;
+}
+.testi-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #f4f4f4;
+}
+.testi-img {
+    border-radius: 50%;
+}
+.testi-bg {
+    background-color: #76DADC ; 
+    padding: 80px 50px 55px 50px;
+}
+
+/* ABOUT_PAGE */
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.about-bg-section {
+    padding-top: 150px;
+}
+.about-pg-small-text {
+    color: #76DADC;
+    font-size: 18px !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.about-pg-heading {
+    color: #232323;
+    font-size: 40px !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.counting {
+    color: #76DADC;
+    font-size: 45px;
+    font-weight: 700;
+}
+.about-pg-text {
+    line-height: 1.6;
+}
+.appointment-bg {
+    background-color: #76DADC;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.appointment-btn {
+    height: 59px;
+    padding-left: 24px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    background: #55cdd0;
+    border-radius: 19px;
+    white-space: nowrap;
+}
+.bg-client {
+    background-color: #eff3f7;
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.border-color {
+    border: 3px solid #76DADC;
+}
+.testi-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.testi-sub-text {
+    color: #3e454c;
+    font-size: 16px;
+    line-height: 1.875;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -58px;
+    left: 0;
+    /* z-index: 15; */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #636363;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+.test_info {
+    margin-top: 52px;
+    margin-bottom: 40px;
+}
+.test_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.test_text {
+    padding-left: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #404040;
+}
+.test_text span {
+    color: #57ccc3;
+}
+.quote {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #57ccc3;
+}
+.carousel-inner {
+    margin-top: 50px;
+}
+/* SERVICE PAGE */
+.service-pg-section {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.meditech-emergenices-card,
+.meditech-apppointment-card,
+.meditech-contact-card {
+    padding: 50px 40px;
+    background-color: #55ceff;
+    width: 100%;
+}
+.meditech-apppointment-card {
+    background-color: #76dadcc2 ;
+    padding-bottom: 30px;
+}
+.meditech-emergenices-card h5,
+.meditech-apppointment-card h5,
+.meditech-contact-card h5 {
+    color: #232323;
+    margin-bottom: 20px;
+}
+.meditech-emergenices-card h4 {
+    color: #232323;
+    margin-bottom: 30px;
+}
+.meditech-emergenices-card p {
+    color: #3e454c !important;
+    margin-bottom: 35px;
+}
+.meditech-emergenices-card a {
+    font-size: 14px;
+    color: #232323;
+    font-weight: 600;
+}
+.meditech-emergenices-card a:hover {
+    text-decoration: none;
+}
+.meditech-apppointment-card .form-control {
+    width: 100%;
+    height: calc(1.5em + .75rem + 30px);
+    background-color: rgb(234 243 255);
+    border: none;
+    border-radius: 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #eaf3ff;
+    position: relative;
+    z-index: 1;
+}
+.meditech-apppointment-card .form-control:focus {
+    background-color: inherit;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.meditech-btn {
+    display: inline-block;
+    color: #76DADC;
+    background-color: #fff;
+    height: 60px;
+    padding: 0 30px;
+    line-height: 56px;
+    font-size: 14px;
+    min-width: 140px;
+    border: 2px solid #fff;
+    border-radius: 0;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+.meditech-btn:hover {
+    text-decoration: none;
+    background-color: #76DADc;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.meditech-contact-card {
+    background-color: #55ceff;
+}
+.meditech-contact-card h5 {
+    margin-bottom: 50px;
+}
+.meditech-contact-card .contact-info {
+    margin-bottom: 30px;
+}
+.meditech-contact-card p {
+    color: #232323 !important;
+    font-size: 12px;
+    font-weight: 500;
+}    
+.meditech-contact-card p a{
+    color: #232323 !important;
+}
+.mr-30 {
+    margin-right: 30px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.contact-icon i {
+    font-size: 35px;
+    color: #000;
+}
+.number-text-size {
+    font-size: 24px;
+}
+/* appointment-page */
+.appointment-section {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.contact_form_container {
+    width: 100%;
+    background: #FFFFFF;
+    padding-left: 33px;
+    padding-right: 34px;
+    padding-bottom: 63px;
+    padding-top: 136px;
+    box-shadow: 0px 25px 38px rgba(0,0,0,0.2);
+}
+.contact_form_title {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 336px;
+    height: 80px;
+    background: #76DADC;
+    line-height: 80px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.contact-info-box {
+    padding: 26px;
+    position: relative;
+    background-color: #76dadcc2;
+}
+.contact-info-box .contact-info-icon {
+    font-size: 28px;
+    color: #000;
+}
+.contact-info-box a:hover {
+    color: #252525;
+}
+.direct_line {
+    width: 100%;
+    height: 48px;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-top: 31px;
+}
+.direct_line_title {
+    width: 130px;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #fff;
+    background-color: #fd556d;
+    white-space: nowrap;
+}
+.direct_line_num {
+    width: calc(100% - 130px);
+    height: 100%;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #fff;
+    background: #57ccc3;
+    white-space: nowrap;
+}
+/* footer */
+.footer-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-section a {
+    color: #02073e;
+    font-size: 16px;
+    text-decoration: none;
+}
+.footer-icon {
+    color: #636363;
+}
+.footer-icon:hover {
+    color: #76DADC;
+    text-decoration: none;
+}
+.footer-text {
+    color: #9a9a9a !important;
+}
+a:hover {
+    text-decoration: none;
+}
+.col-container {
+    display: table;
+    width: 100%;
+  }
+.col {
+    display: inline-block;
+}
+.service-h {
+    height: 45px;
+}
+/* Login page */
+.login-section {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.text-sm {
+    color: #000;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar> .container {
+        width: 90%;
+    }
+    .navbar .navbar-nav li a {
+        margin: 0 !important;
+    }
+    .button {
+        margin-left: 0px;
+    }
+    .button a {
+        text-align: center;
+    }
+    .navbar-toggler:focus {
+        outline: none;
+    }
+    .margin-top {
+        margin-top: 20px;
+    }
+    .about-box-scale {
+        transform: none;
+    }
+    .margin-top-35 {
+        margin-top: 0px;
+    }
+    .service-section .row {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .margin-bottom {
+        margin-bottom: 20px;
+    }
+    .box-margin-left {
+        min-height: 80%;
+        margin-top: 0px;
+    }
+    .box-margin-right {
+        min-height: 77%;
+    }
+    .navbar .navbar-custom {
+        background-color: #fff;
+    }
+    .navbar .nav-sticky {
+        background-color: #fff !important;
+    }
+    .mb-50 {
+        margin-bottom: 0px;
+    }
+    .service-bottom-margin {
+        margin-bottom: 50px;
+    }
+    .appointment-section,
+    .service-section,
+    .about-bg-section {
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+    .margin-50 {
+        margin-top: 50px;
+    }
+    .direct_line_num {
+        font-size: 24px;
+    }
+    .about-bg-section .container .row-change {
+        flex-direction: column-reverse;
+    }
+    .mb-40 {
+        margin-bottom: 40px;
+    }
+    .text-align {
+        text-align: center;
+    }
+    .col {
+        display: block;
+        width: 100%;
+    }
+    .about-box-right {
+        padding-top: 70px;
+        padding-right: 40px;
+        padding-bottom: 179px;
+        padding-left: 40px;
+        background-color: #76dadc57;
+    }
+    .hero-btn {
+        font-size: 13px;
+    }
+    .btn-center {
+        font-size: 13px;
+    }
+    .button-2 {
+        margin-top: 8px;
+    }
+}
+@media (max-width: 992px) {
+    .about-box-right {
+        padding-top: 70px;
+        padding-right: 40px;
+        padding-bottom: 119px !important;
+        padding-left: 40px;
+        background-color: #76dadc57;
+    }
+    .button {
+        margin-left: 0px;
+    }
+    .button a {
+        text-align: center;
+    }
+    .margin-21 {
+        margin-top: 21px;
+    }
+    .margin-0 {
+        margin-top: 0px;
+    }
+    .margin-4 {
+        margin-bottom: 1.5rem!important;
+    }
+    .mb-40 {
+        margin-bottom: 40px;
+    }
+    .margin-50 {
+        margin-top: 50px;
+    }
+    .margin-top {
+        margin-top: 20px;
+    }
+    .margin-bottom {
+        margin-bottom: 20px;
+    }
+    .navbar-toggler:focus {
+        outline: none;
+    }
+    .hero-btn {
+        font-size: 13px;
+    }
+    .btn-center {
+        font-size: 13px;
+    }
+    .appointment-btn {
+        height: 59px;
+        padding-left: 12px;
+        padding-right: 8px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        color: #000;
+        background: #55cdd0;
+        border-radius: 19px;
+        white-space: nowrap;
+    }
+    .button a {
+        display: block;
+        padding-left: 40px;
+        padding-right: 36px;
+        line-height: 42px;
+        font-size: 10px !important;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+@media (max-width: 959px) {
+    .button {
+        margin-left: 0px;
+    }
+    .button a {
+        text-align: center;
+    }
+    .p-50 {
+        padding-top: 50px;
+    }
+    .about-bg-section .container .row-change {
+        flex-direction: column-reverse;
+    }
+    .about-box-right {
+        padding-top: 70px;
+        padding-right: 40px;
+        padding-bottom: 180px !important;
+        padding-left: 40px;
+        background-color: #76dadc57;
+    }
+    .navbar-toggler:focus {
+        outline: none;
+    }
+    .hero-btn {
+        font-size: 13px;
+    }
+    .btn-center {
+        font-size: 13px;
+    }
+    .button-2 {
+        margin-top: 8px;
+    }
+}
+@media only screen and (max-width: 1199px){
+    .button {
+        margin-left: 0px;
+    }
+    .button a {
+        text-align: center;
+    }
+    .direct_line_num {
+        font-size: 24px;
+    }
+    .about-box-right {
+        padding-top: 70px;
+        padding-right: 40px;
+        padding-bottom: 118px;
+        padding-left: 40px;
+        background-color: #76dadc57;
+    }
+    .col-container {
+        display: table;
+        width: 100%;
+      }
+    .col {
+        display: inline-block;
+        padding: 16px;
+    }
+    .navbar-toggler:focus {
+        outline: none;
+    }
+    .button a {
+        display: block;
+        padding-left: 40px;
+        padding-right: 36px;
+        line-height: 42px;
+        font-size: 12px !important;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .button-2 {
+        margin-left: 5px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .button-2 {
+        margin-left: 5px !important;
+    }
+    .button a {
+        text-align: center;
+    }
+    .about-box-right {
+        padding-top: 70px;
+        padding-right: 40px;
+        padding-bottom: 118px;
+        padding-left: 40px;
+        background-color: #76dadc57;
+    }
+    .navbar-toggler:focus {
+        outline: none;
+    }
+    .number-text-size {
+        font-size: 19px;
+    }
+    .meditech-contact-card p {
+        color: #232323 !important;
+        font-size: 9px;
+        font-weight: 500;
+    }
+    .button a {
+        display: block;
+        padding-left: 40px;
+        padding-right: 36px;
+        line-height: 42px;
+        font-size: 11px !important;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
